@@ -73,7 +73,7 @@ body {
   box-shadow: 0px 0px 30px grey;
 }
 
-.icon-container .icon1 {
+.icon-container i{
   font-size: 40px;
   color: white;
   text-shadow: 0px 0px 30px grey;
@@ -373,7 +373,6 @@ body {
   /* position: relative; */
   width: 120px;
   height: 120px;
-  cursor: pointer;
 }
 
 /* Proyects content */
@@ -401,11 +400,10 @@ body {
 }
 
 .card-container {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   padding: 20px;
-  /* margin: 40px; */
 }
 
 .card {
@@ -413,24 +411,46 @@ body {
   color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px grey;
-  height: 600px;
+  height: 250px;
   text-align: justify;
+  background-color: rgb(59, 59, 59);
 }
 
-.card-content h3 {
-  text-align: center;
+.card-text{
+  margin: 30px;
 }
 
-.image-card {
-  margin: 70px;
-  display: flex;
-  justify-content: center;
+.card-text h2 {
+  text-align: left;
+  color: yellow;
 }
 
-.image-card img {
-  width: 200px;
-  height: 200px;
+.card-text .types{
+  display: inline;
+  border: solid 2px gray;
+  padding: 7px;
+  margin-left: 5px;
+}
+
+.card-text p{
+  font-size: 17px;
+}
+
+ion-icon{
+  position: static !important;
+}
+
+.card-icon a{
+  position: static !important;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.2s;
+}
+
+.card-icon a:hover{
+  color: yellow;
 }
 
 @media (max-width: 500px) {
