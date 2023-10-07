@@ -30,7 +30,8 @@ let skills = document.querySelector('.skills-content')
 let skills2 = document.querySelector('.skills-content2')
 let image = document.querySelector('.image-container')
 let proyects = document.querySelector('.proyects-content')
-let card = document.querySelector('.card-container') 
+let card = document.querySelector('.card-container')
+let contact = document.querySelector('.contact-content')
 
 toggleButton.addEventListener("click", () => {
   body.style.overflow = 'auto';
@@ -46,6 +47,7 @@ toggleButton.addEventListener("click", () => {
   skills2.style.display = 'flex'
   image.style.display = 'grid'
   proyects.style.display = 'flex'
+  contact.style.display = 'flex'
   card.style.display = 'grid'
 });
 
