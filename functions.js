@@ -35,10 +35,6 @@ let card = document.querySelector('.card-section')
 let contact = document.querySelector('.contact-container') 
 let contactContent = document.querySelector('.contact-content') 
 
-let showExperience = experiencie1.forEach((x)=>{
-  x.style.display = 'flex'
-})
-
 toggleButton.addEventListener("click", () => {
   body.style.overflow = 'auto';
   bar.style.display = "block";
@@ -49,7 +45,9 @@ toggleButton.addEventListener("click", () => {
   iconContainer.style.display = "none";
   navbar.style.display = 'flex';
   experiencie.style.display = 'flex'
-  showExperience
+  experiencie1.forEach((x)=>{
+    x.style.display = 'flex'
+  })
   skills.style.display = 'flex'
   skills2.style.display = 'flex'
   image.style.display = 'grid'
