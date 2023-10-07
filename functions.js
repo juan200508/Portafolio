@@ -26,7 +26,7 @@ let navbar = document.querySelector(".nav-bar");
 let info = document.querySelector(".info");
 let info2 = document.querySelector(".info2");
 let experiencie = document.querySelector('.experiencie-content');
-let experiencie1 = document.querySelector('.experiencie1');
+let experiencie1 = document.querySelectorAll('.experiencie1');
 let skills = document.querySelector('.skills-content')
 let skills2 = document.querySelector('.skills-content2')
 let image = document.querySelector('.image-container')
@@ -34,6 +34,10 @@ let proyects = document.querySelector('.proyects-content')
 let card = document.querySelector('.card-section')
 let contact = document.querySelector('.contact-container') 
 let contactContent = document.querySelector('.contact-content') 
+
+let showExperience = experiencie1.forEach((x)=>{
+  x.style.display = 'flex'
+})
 
 toggleButton.addEventListener("click", () => {
   body.style.overflow = 'auto';
@@ -45,7 +49,7 @@ toggleButton.addEventListener("click", () => {
   iconContainer.style.display = "none";
   navbar.style.display = 'flex';
   experiencie.style.display = 'flex'
-  experiencie1.style.display = 'flex'
+  showExperience
   skills.style.display = 'flex'
   skills2.style.display = 'flex'
   image.style.display = 'grid'
