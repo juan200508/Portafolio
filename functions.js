@@ -62,7 +62,7 @@ let burguer = document.querySelector('.burguer');
 let navlinks = document.querySelector('.nav-links');
 let options = document.querySelectorAll('.nav-links ul li');
 let item = document.querySelector('.item');
-let navA = document.querySelectorAll('.nav-links a');
+let navA = document.querySelectorAll('.nav-links .a');
 
 burguer.addEventListener('click', ()=>{
   navlinks.classList.toggle('mobile-menu');
@@ -87,6 +87,13 @@ navA.forEach((link)=>{
   })
 })
 
+// Download the cv
+let file = 'pdf/CV-JuanDavidPelaez.pdf'
+let download = document.querySelector('#download');
 
+download.addEventListener('click', () =>{
+  download.href = file;
+  download.download = "CV-JuanDavidPelaez.pdf"
+})
 
 
